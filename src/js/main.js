@@ -1,7 +1,8 @@
 // This file is intentionally left blank.
 document.addEventListener('DOMContentLoaded', () => {
     const teacherBtn = document.getElementById('teacherBtn');
-    const meBtn = document.getElementById('meBtn');
+    const studentBtn = document.getElementById('studentBtn');
+    const clearBtn = document.getElementById('clearBtn');
     const infoEl = document.getElementById('info');
 
     const teacher = {
@@ -28,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
         infoEl.focus();
     }
 
+    function clearInfo() {
+        infoEl.innerHTML = '<p>Presiona un botón para ver la información.</p>';
+        infoEl.focus();
+    }
+
     teacherBtn.addEventListener('click', () => renderPerson(teacher));
-    meBtn.addEventListener('click', () => renderPerson(me));
+    studentBtn.addEventListener('click', () => renderPerson(me));
+    clearBtn.addEventListener('click', clearInfo);
 });
