@@ -3,10 +3,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.4;
+    padding: 1rem;
 }
 
 header {
-    background: #35424a;
+    background: #162644;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -37,11 +39,37 @@ nav a:hover {
 }
 
 footer {
-    background: #35424a;
+    background: #162644;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #2c3e50;
+    background: #ecf0f1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background: #dfe6e9;
+}
+
+.info-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
 }
